@@ -36,11 +36,11 @@
     position: relative;
 }
 .card0 {
-    background: url("https://i.imgur.com/IGq1yH7.jpg") center center no-repeat;
+    background: url("/styles/photo_2022-10-21_12-07-46.jpg") center center no-repeat;
     background-size: 300px;
 }
 .card0:hover {
-    background: url("https://i.imgur.com/IGq1yH7.jpg") bottom center no-repeat;
+    background: url("/styles/photo_2022-10-21_12-07-46.jpg") bottom center no-repeat;
     background-size: 400px;
 }
 .card0:hover h2 {

@@ -81,7 +81,7 @@ exports.update = async (req, res) => {
 
 exports.destroy = async (req, res) => {
 
-    let useremail=req.body.email
+    let email = req.body.email
     await UserModel.deleteOne({email: req.body.email}).then(data => {
 
         if (data.deletedCount===0) {
@@ -91,7 +91,7 @@ exports.destroy = async (req, res) => {
         } else {
 
 
-            res.render('results', {users: "user "+useremail+" deleted succesfully!"})
+            res.render('results', {users: "user "+ email +" deleted successfully!"})
         }
     }).catch(err => {
 

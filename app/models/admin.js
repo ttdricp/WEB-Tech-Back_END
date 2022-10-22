@@ -17,10 +17,10 @@ var schema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    root:{
-        type: String,
-        default:''
-    }
+    roles: [{
+        type:String,
+        ref: 'Role'
+    }]
 });
 var Admin = new mongoose.model('Admin', schema);
 module.exports = Admin;
